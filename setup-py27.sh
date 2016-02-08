@@ -27,7 +27,7 @@ export PATH=$PATH:$IPYTHON_HOME/bin
 
 echo "export paths to the .profile file so other terminals can use ipython"
 
-printf "\n\nexport IPYTHON_HOME=/home/ubuntu/miniconda2 PATH=/$PATH:$IPYTHON_HOME/bin  >> ~/.profile
+printf "\n\nexport IPYTHON_HOME=/home/ubuntu/miniconda2 PATH=/$PATH:$IPYTHON_HOME/bin"  >> ~/.profile
 
 conda create -n myPy27 python
 source activate myPy27
