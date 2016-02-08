@@ -8,8 +8,6 @@ wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
 chmod a+x Miniconda-latest-Linux-x86_64.sh
 bash Miniconda-latest-Linux-x86_64.sh
 rm Miniconda-latest-Linux-x86_64.sh
-conda create -n myPy27 python
-source activate myPy27
 
 # for ipython 3
 #wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -31,6 +29,8 @@ echo "export paths to the .profile file so other terminals can use ipython"
 
 printf "\n\nexport IPYTHON_HOME=/home/ubuntu/miniconda2 PATH=/$PATH:$IPYTHON_HOME/bin  >> ~/.profile
 
+conda create -n myPy27 python
+source activate myPy27
 
 
 conda install -c https://conda.anaconda.org/jjhelmus tensorflow
