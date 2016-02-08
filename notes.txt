@@ -1,0 +1,49 @@
+pip install -e git+https://github.com/lakshmivyas/hyde.git#egg=hyde
+pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl
+
+
+
+
+
+git clone --recurse-submodules https://github.com/tensorflow/tensorflow
+
+
+
+
+
+
+
+
+conda install -c https://conda.anaconda.org/jjhelmus tensorflow
+
+
+
+ pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl
+
+
+
+
+pip install -e git+https://github.com/lakshmivyas/hyde.git#egg=hyde
+
+
+cd /home/ubuntu/workspace/
+
+wget http://dl.google.com/android/android-sdk_r24.4.1-linux.tgz -O /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz
+
+tar -xvzf /home/ubuntu/workspace/android-sdk_r24.4.1-linux.tgz -C /home/ubuntu/workspace/
+
+rm android-sdk_r24.4.1-linux.tgz
+
+#chmod a+x android-sdk_r24.4.1-linux.bin
+#./android-sdk_r24.4.1-linux.bin
+
+#rm android-sdk_r24.4.1-linux.bin
+
+echo "export paths to the .profile file so other terminals can use android sdk"
+
+printf "\n\nexport ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/tools\nexport PATH=\$PATH:\$ANDROID_SDK_HOME/platform-tools"  >> ~/.profile
+
+echo "export paths here so this bash file can use android sdk"
+export ANDROID_SDK_HOME=/home/ubuntu/workspace/android-sdk-linux
+export PATH=$PATH:$ANDROID_SDK_HOME/tools
+export PATH=$PATH:$ANDROID_SDK_HOME/platform-tools
