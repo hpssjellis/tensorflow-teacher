@@ -23,13 +23,13 @@ source activate myPy27
 
 
 
-#export IPYTHON_HOME=/home/ubuntu/miniconda2
-#export PATH=$PATH:$IPYTHON_HOME/bin
+export IPYTHON_HOME=/home/ubuntu/miniconda2
+export PATH=$PATH:$IPYTHON_HOME/bin
 
 
-#echo "export paths to the .profile file so other terminals can use ipython"
+echo "export paths to the .profile file so other terminals can use ipython"
 
-#printf "\n\nexport IPYTHON_HOME=/home/ubuntu/miniconda2 PATH=/$PATH:$IPYTHON_HOME/bin  >> ~/.profile
+printf "\n\nexport IPYTHON_HOME=/home/ubuntu/miniconda2 PATH=/$PATH:$IPYTHON_HOME/bin  >> ~/.profile
 
 
 
@@ -39,7 +39,7 @@ conda install -c https://conda.anaconda.org/jjhelmus tensorflow
 conda install ipython-notebook
 
 
-ipython notebook --ip=0.0.0.0 --port=8080 --no-browser
+jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 
 echo "YOu can load the browser by clicking on the following and select open"
 echo "http:\\$C9_HOSTNAME:8080/tree"
