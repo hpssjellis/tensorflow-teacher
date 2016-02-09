@@ -2,6 +2,9 @@
 
 #  only need to run this script with the command (do not type the #)
 #  bash setup-py27.sh
+echo "download tensorflow to the workspace"
+
+git clone --recurse-submodules https://github.com/tensorflow/tensorflow
 
 
 wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
@@ -33,16 +36,16 @@ conda create -n myPy27 python
 source activate myPy27
 
 
-conda install -c https://conda.anaconda.org/jjhelmus tensorflow
+#conda install -c https://conda.anaconda.org/jjhelmus tensorflow
 
 
-conda install ipython-notebook
+echo "Install jupyter the new version of iPython notebook"
+
+conda install jupyter
 
 
 jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 
-echo "YOu can load the browser by clicking on the following and select open"
-echo "http:\\$C9_HOSTNAME:8080/tree"
 
 
 
@@ -50,10 +53,12 @@ echo "http:\\$C9_HOSTNAME:8080/tree"
 
 
 echo "If you have made it this far the installation has finished"
-echo "SETUP.SH HAS FINISHED INSTALLING. You can close this terminal window by clicking the x"
+echo "SETUP HAS FINISHED INSTALLING. You can close this terminal window by clicking the x"
 echo "-----------------------------------------"
 echo ""
 
+echo "You can load the browser by clicking on the following and select open"
+echo "http:\\$C9_HOSTNAME:8080/tree"
 
 
 
