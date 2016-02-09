@@ -41,7 +41,7 @@ echo "Make it so a new terminal opens the virtual environment"
 printf "\n\nsource activate myPy27"  >> ~/.profile
 
 
-#conda install -c https://conda.anaconda.org/jjhelmus tensorflow
+conda install -c https://conda.anaconda.org/jjhelmus tensorflow
 
 echo "Install some things TensorFlow needs"
 
