@@ -81,7 +81,8 @@ echo "--------------------------------------------------------------"
 echo ". "
 
 
-
+pip install --upgrade ipython
+pip install --upgrade jupyter
 
 echo "deactivate    to get out of the virtual enviroment"
 
