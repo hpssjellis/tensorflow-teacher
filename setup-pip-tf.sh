@@ -84,6 +84,10 @@ echo ". "
 pip install --upgrade ipython
 pip install --upgrade jupyter
 
+jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+
+
+
 echo "deactivate    to get out of the virtual enviroment"
 
 
