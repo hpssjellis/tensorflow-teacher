@@ -38,7 +38,7 @@ conda create -n myPy27 python
 source activate myPy27
 
 echo "Make it so a new terminal opens the virtual environment"
-printf "\n\nexport source activate myPy27"  >> ~/.profile
+printf "\n\nsource activate myPy27"  >> ~/.profile
 
 
 #conda install -c https://conda.anaconda.org/jjhelmus tensorflow
