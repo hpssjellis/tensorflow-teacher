@@ -42,11 +42,15 @@ echo "Lets try to let pip install tensorflow into our workspace"
 
 mkdir tensorflow
 
-export PYTHONPATH=/home/ubuntu/workspace/tensorflow:$PYTHONPATH
-export PATH=/home/ubuntu/workspace/tensorflow/bin:$PATH
 
 
 printf "\n\nexport PYTHONPATH=/home/ubuntu/workspace/tensorflow:/$PYTHONPATH\nexport PATH=/home/ubuntu/workspace/tensorflow/bin:/$PATH"  >> ~/.profile
+
+
+
+export PYTHONPATH=/home/ubuntu/workspace/tensorflow:$PYTHONPATH
+export PATH=/home/ubuntu/workspace/tensorflow/bin:$PATH
+
 
 PYTHONUSERBASE=/home/ubuntu/workspace/tensorflow pip install --user --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl
 
