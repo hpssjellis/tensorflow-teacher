@@ -32,8 +32,13 @@ echo "export paths to the .profile file so other terminals can use ipython"
 
 printf "\n\nexport IPYTHON_HOME=/home/ubuntu/miniconda2 PATH=/$PATH:$IPYTHON_HOME/bin"  >> ~/.profile
 
+echo "Create the virtual environment"
+
 conda create -n myPy27 python
 source activate myPy27
+
+echo "Make it so a new terminal opens the virtual environment"
+printf "\n\nexport source activate myPy27"  >> ~/.profile
 
 
 #conda install -c https://conda.anaconda.org/jjhelmus tensorflow
