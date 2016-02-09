@@ -46,6 +46,7 @@ printf "\n\nsource activate myPy27"  >> ~/.profile
 echo "Install some things TensorFlow needs"
 
 conda install matplotlib
+conda install scipy
 
 
 echo "Install jupyter the new version of iPython notebook"
