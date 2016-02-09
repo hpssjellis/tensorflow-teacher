@@ -38,6 +38,10 @@ source activate myPy27
 
 #conda install -c https://conda.anaconda.org/jjhelmus tensorflow
 
+echo "Install some things TensorFlow needs"
+
+conda install matplotlib
+
 
 echo "Install jupyter the new version of iPython notebook"
 
