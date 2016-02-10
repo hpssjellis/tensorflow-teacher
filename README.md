@@ -4,6 +4,10 @@ Second attempt to make Google's TensorFlow available on cloud 9. Also trying to 
 
 Feb 9th, 2016. After many dead ends. This finally works. loads tensorflow in the cloud 9 enviroment http://c9.io 
 
+See original Github at https://github.com/hpssjellis/easy-tensorflow-on-cloud9 and youtube video at
+
+https://youtu.be/kMtrOIPLpR0
+
 
 
 
