@@ -77,7 +77,20 @@ echo ". "
 
 #deactivate
 
+echo "Grab Tensorflow for use on our workspace"
+
 git clone --recurse-submodules https://github.com/tensorflow/tensorflow
+
+echo "Just keep what we want to use"
+echo "Probably a better way to do this, but it works"
+
+mkdir /home/ubuntu/workspace/udacity2
+
+cp -r /home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity /home/ubuntu/workspace/udacity2
+
+rm /home/ubuntu/workspace/tensorflow
+
+#/home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity
 
 
 
