@@ -91,6 +91,11 @@ pip install --upgrade jupyter
 
 jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 
+printf "\necho 'enter   deactivate    to get out of the virtual enviroment' " >>~/.profile
+
+
+
+ln -s /home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity /home/ubuntu/workspace/udacityLink
 
 
 echo "deactivate    to get out of the virtual enviroment"
