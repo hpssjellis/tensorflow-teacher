@@ -77,7 +77,7 @@ echo ". "
 
 #deactivate
 
-#git clone --recurse-submodules https://github.com/tensorflow/tensorflow
+git clone --recurse-submodules https://github.com/tensorflow/tensorflow
 
 
 echo "--------------------------------------------------------------"
