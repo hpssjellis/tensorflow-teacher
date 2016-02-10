@@ -85,9 +85,9 @@ git clone --recurse-submodules https://github.com/tensorflow/tensorflow
 echo "Just keep what we want to use"
 echo "Probably a better way to do this, but it works"
 
-mkdir /home/ubuntu/workspace/udacity2
+#mkdir /home/ubuntu/workspace/udacity2
 
-cp -r /home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity /home/ubuntu/workspace/udacity2
+cp -r /home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity /home/ubuntu/workspace/
 
 sudo rm -r /home/ubuntu/workspace/tensorflow
 
