@@ -27,6 +27,7 @@ source ~/virtual-tf/bin/activate
 
 echo "Make it so a new terminal opens the virtual environment"
 printf "\n\nsource ~/virtual-tf/bin/activate "  >> ~/.profile
+printf "\necho 'enter   deactivate    to get out of the virtual enviroment'"  >> ~/.profile
 
 
 echo "--------------------------------------------------------------"
@@ -88,7 +89,7 @@ mkdir /home/ubuntu/workspace/udacity2
 
 cp -r /home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity /home/ubuntu/workspace/udacity2
 
-rm /home/ubuntu/workspace/tensorflow
+sudo rm -r /home/ubuntu/workspace/tensorflow
 
 #/home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity
 
@@ -104,14 +105,14 @@ pip install --upgrade jupyter
 
 jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
 
-printf "\necho 'enter   deactivate    to get out of the virtual enviroment' " >>~/.profile
 
 
 
-ln -s /home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity /home/ubuntu/workspace/udacityLink
+
+#ln -s /home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity /home/ubuntu/workspace/udacityLink
 
 
-echo "deactivate    to get out of the virtual enviroment"
+echo "Enter deactivate    to get out of the virtual enviroment"
 
 
 
