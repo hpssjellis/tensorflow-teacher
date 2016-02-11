@@ -99,21 +99,23 @@ sudo rm -r /home/ubuntu/workspace/tensorflow
 
 echo "--------------------------------------------------------------"
 echo ". "
+#ln -s /home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity /home/ubuntu/workspace/udacityLink
+
+
+#echo "Enter deactivate    to get out of the virtual enviroment"
 
 
 pip install --upgrade ipython
 pip install --upgrade jupyter
 
-jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+#jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+jupyter notebook --ip $IP --port $PORT --no-browser
+
+
+#The above command stays running so no more commands below here
 
 
 
-
-
-#ln -s /home/ubuntu/workspace/tensorflow/tensorflow/examples/udacity /home/ubuntu/workspace/udacityLink
-
-
-echo "Enter deactivate    to get out of the virtual enviroment"
 
 
 
